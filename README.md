@@ -5,4 +5,5 @@ Cloudflare pages,workers
 Typescript
 Firebase
 Clerk for authentication
-
+hono or express
+gemini API key because openAI is not free
