@@ -27,7 +27,7 @@ function Sidebar() {
           <SheetContent side="left" className="w">
             <SheetHeader>
               <SheetTitle>Menu</SheetTitle>
-              <div>{optionMenu}</div>
+              <div></div>
             </SheetHeader>
           </SheetContent>
         </Sheet>
