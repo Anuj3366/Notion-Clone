@@ -6,4 +6,19 @@ import {
   cert,
 } from 'firebase-admin/app';
 
-export { getFirestore} from 'firebase-admin/firestore';
+import { getFirestore} from 'firebase-admin/firestore';
+
+let app: App;
+const serviceKey = require('./service_key.json');
+
+if(getApps().length === 0) {
+  app = initializeApp({
+    credential: cert(serviceKey),
+  });
+} else {
+  app = getApp();
+}
+
+const adminDb = getFirestore(app);
+
+export {app as adminApp,adminDb};
