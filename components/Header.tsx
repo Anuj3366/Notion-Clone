@@ -16,7 +16,11 @@ function Header() {
           {(user?.username?.charAt(0).toUpperCase()  + "" + user?.username?.substring(1) + "'s "|| "User's")} Space
         </h1>
       )}
-
+      {!user && (
+        <h1 className="text-2xl">
+          
+        </h1>
+      )}
       {/* links */}
 
       <div>

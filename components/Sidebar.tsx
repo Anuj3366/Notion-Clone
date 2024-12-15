@@ -1,5 +1,5 @@
 import React from 'react'
-import NewDocumentbtw from './NewDocumentbtw'
+import NewDocumentbtw from './NewDocumentButton'
 import {
   Sheet,
   SheetContent,
